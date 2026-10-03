@@ -1,0 +1,55 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --card-bg: #f5f5f5;
+  --border-color: #cccccc;
+  --warning-color: #d97706; /* Orange text */
+  --over-color: #dc2626; /* Red text */
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f3f4f6;
+  --card-bg: #1e1e1e;
+  --border-color: #444444;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  margin: 0;
+  padding: 2rem;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Character counter classes */
+.warning {
+  color: var(--warning-color);
+}
+
+.over {
+  color: var(--over-color);
+  font-weight: bold;
+}
